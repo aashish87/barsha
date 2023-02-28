@@ -97,5 +97,67 @@
       }
       .dot {
         display
+: inline-block;
+width: 10px;
+height: 10px;
+margin: 0 5px;
+border-radius: 50%;
+background-color: rgba(255, 255, 255, 0.5);
+transition: background-color 0.3s ease-in-out;
+cursor: pointer;
+}
+.active-dot {
+background-color: #fff;
+}
+@media screen and (max-width: 600px) {
+h1 {
+font-size: 36px;
+margin-top: 50px;
+}
+.message {
+font-size: 20px;
+}
+.slideshow-container {
+max-width: 400px;
+}
+.prev, .next {
+font-size: 24px;
+padding: 5px;
+}
+.dot {
+width: 8px;
+height: 8px;
+margin: 0 3px;
+}
+}
+</style>
 
+  </head>
+  <body>
+    <h1>I Love You, Barsha</h1>
+    <div class="message">
+      <p>Happy Valentine's Day!</p>
+      <p>You are my everything and I am so grateful to have you in my life. I love you more than words can express.</p>
+      <p>Forever and always,</p>
+      <p>Yours</p>
+    </div>
+    <div class="image-container">
+      <img src="https://picsum.photos/id/237/300/300" alt="couple image">
+    </div>
+    <div class="slideshow-container">
+      <img class="slide" src="https://picsum.photos/id/1018/600/400" alt="couple image">
+      <img class="slide" src="https://picsum.photos/id/1035/600/400" alt="couple image">
+      <img class="slide" src="https://picsum.photos/id/1064/600/400" alt="couple image">
+      <img class="slide" src="https://picsum.photos/id/1074/600/400" alt="couple image">
+      <img class="slide" src="https://picsum.photos/id/1084/600/400" alt="couple image">
+      <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
+    </div>
+    <br>
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5
 
