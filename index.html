@@ -2,19 +2,24 @@
 <html>
   <head>
     <title>I Love You, Barsha</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
       body {
-        background-color: #ffd9e3; /* Changed to light pink */
+        background: linear-gradient(to bottom, #FFC0CB, #FF69B4);
         font-family: Arial, sans-serif;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
       }
       h1 {
         font-size: 48px;
         text-align: center;
-        color: #000;
         margin-top: 100px;
-        -webkit-text-stroke: 1px #fff; /* Added stroke to the header text */
+        color: #000;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        -webkit-text-stroke: 1px #fff;
         -moz-text-stroke: 1px #fff;
         -ms-text-stroke: 1px #fff;
+        -o-text-stroke: 1px #fff;
         text-stroke: 1px #fff;
       }
       .message {
@@ -23,8 +28,14 @@
         font-size: 24px;
         line-height: 1.5;
         text-align: center;
-        color: #fff; /* Changed text color to white */
-      
+      }
+      .message p {
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+        -webkit-text-stroke: 1px #fff;
+        -moz-text-stroke: 1px #fff;
+        -ms-text-stroke: 1px #fff;
+        -o-text-stroke: 1px #fff;
+        text-stroke: 1px #fff;
       }
       .image-container {
         display: flex;
@@ -38,22 +49,53 @@
         border-radius: 50%;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
       }
-    </style>
-  </head>
-  <body>
-    <h1>I Love You, Barsha</h1>
-    <div class="message">
-      <p>My dearest Barsha,</p>
-      <p>I just wanted to take a moment to express how much I love you. You bring so much joy and happiness into my life, and I feel incredibly grateful to have you by my side.</p>
-      <p>Every day with you is a new adventure, and I can't wait to see what the future holds for us. You are my best friend, my partner, and my soulmate, and I love you more than words can describe.</p>
-      <p>Thank you for being you, and for loving me just the way I am.</p>
-      <p>Forever and always,</p>
-      <p>Your loving partner</p>
-    </div>
-    <div class="image-container">
-      <img src="https://i.imgur.com/4w4UVwf.jpg" alt="Photo of us together">
-    </div>
-  </body>
-</html>
+      .slideshow-container {
+        max-width: 600px;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+      }
+      .slideshow-container img {
+        width: 100%;
+        height: auto;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .slideshow-container img:first-child {
+        display: block;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 36px;
+        font-weight: bold;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        cursor: pointer;
+        z-index: 1;
+        transition: background 0.3s ease-in-out;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+      }
+      .prev:hover, .next:hover {
+        background: rgba(0, 0, 0, 0.8);
+      }
+      .prev {
+        left: 20px;
+      }
+      .next {
+        right: 20px;
+      }
+      .dots {
+        text-align: center;
+        margin-top: 10px;
+      }
+      .dot {
+        display
 
 
